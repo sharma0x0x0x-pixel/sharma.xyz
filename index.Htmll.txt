@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma XYZ</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+}
+
+header h1 {
+    margin: 0;
+    color: #38bdf8;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background: #020617;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+button {
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #38bdf8;
+}
+
+.card {
+    background: #1e293b;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 250px;
+}
+
+.footer {
+    background: #020617;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Sharma XYZ</h1>
+    <p>Online Marketing & Basic Needs Services</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Grow Your Business With Us 🚀</h2>
+    <p>Providing online marketing and daily essential services for everyone</p>
+    <button onclick="window.location.href='tel:9576413900'">Call Now</button>
+</div>
+
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+        Sharma XYZ provides online marketing and basic daily need services 
+        for normal people. We aim to make services easy and accessible 
+        through your mobile.
+    </p>
+</div>
+
+<div class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="card">
+        <h3>📢 Online Marketing</h3>
+        <p>Grow your business online with our help</p>
+    </div>
+
+    <div class="card">
+        <h3>🛒 Daily Needs</h3>
+        <p>Basic services for everyday needs</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Easy Contact</h3>
+        <p>Connect directly via phone</p>
+    </div>
+
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 9576413900</p>
+    <p>📍 Location: Srirampur, Lalganj Road, Hajipur, Vaishali</p>
+    <p>📧 Email: your-email@gmail.com</p>
+</div>
+
+<div class="footer">
+    <p>© 2026 Sharma XYZ | All Rights Reserved</p>
+</div>
+
+</body>
+</html>
