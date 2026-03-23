@@ -75,9 +75,17 @@ button {
     background: #1e293b;
     margin: 15px;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 15px;
     display: inline-block;
     width: 250px;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .footer {
@@ -97,11 +105,27 @@ button {
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <span style="font-size:25px;cursor:pointer" onclick="toggleMenu()">☰</span>
+
+    <div id="menu" style="display:none;">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#features">Features</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <br><br>
+    <input type="text" placeholder="Search..." style="padding:8px;width:200px;border-radius:6px;">
 </nav>
+
+<script>
+function toggleMenu(){
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "none") ? "block" : "none";
+}
+</script>
 
 <div class="hero">
     <h2>Grow Your Business With Us 🚀</h2>
@@ -137,17 +161,46 @@ button {
     </div>
 
 </div>
+<div class="section" id="ideas">
+    <h2>20+ Business Ideas 💡</h2>
 
+    <div class="card">Digital Marketing Agency</div>
+    <div class="card">YouTube Channel</div>
+    <div class="card">Blogging</div>
+    <div class="card">Freelancing</div>
+    <div class="card">E-commerce Store</div>
+    <div class="card">Fitness Coaching</div>
+    <div class="card">Online Teaching</div>
+    <div class="card">Dropshipping</div>
+    <div class="card">App Development</div>
+    <div class="card">Graphic Designing</div>
+    <div class="card">Affiliate Marketing</div>
+    <div class="card">Content Writing</div>
+    <div class="card">Photography</div>
+    <div class="card">Event Management</div>
+    <div class="card">Home Bakery</div>
+    <div class="card">Clothing Brand</div>
+    <div class="card">Social Media Manager</div>
+    <div class="card">Consultancy</div>
+    <div class="card">Delivery Services</div>
+    <div class="card">Gym / Fitness Studio</div>
+
+</div>
 <div class="section" id="contact">
     <h2>Contact Us</h2>
     <p>📞 Phone: 9576413900</p>
     <p>📍 Location: Srirampur, Lalganj Road, Hajipur, Vaishali</p>
-    <p>📧 Email: your-email@gmail.com</p>
+    <p>📧 Email: sharma0x0x0xh@gmail.com</p>
 </div>
 
 <div class="footer">
     <p>© 2026 Sharma XYZ | All Rights Reserved</p>
 </div>
-
+<script>
+function toggleMenu(){
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "none") ? "block" : "none";
+}
+</script>
 </body>
 </html>
