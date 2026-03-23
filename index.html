@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sharma XYZ</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f172a;
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #000, #111);
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
     color: white;
+    border: 1px solid white;
+}>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;}
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+header {
+    background: #111111;
+}
+
+nav {
+    background: #111111;
+}
+
+.card {
+    background: #ffffff;
+    color: #000000;
 }
 
 header {
@@ -61,10 +109,11 @@ button {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .section {
-    padding: 60px 20px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .section h2 {
@@ -145,11 +194,35 @@ function toggleMenu(){
 <div class="section" id="services">
     <h2>Our Services</h2>
 
-    <div class="card">
-        <h3>📢 Online Marketing</h3>
-        <p>Grow your business online with our help</p>
-    </div>
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?marketing" alt="">
+    <h3>Digital Marketing Agency</h3>
+    <p>Grow brands using SEO, ads, and social media marketing strategies.</p>
+</div>
 
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?youtube" alt="">
+    <h3>YouTube Channel</h3>
+    <p>Create videos and earn through ads, sponsorships and audience growth.</p>
+</div>
+
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?freelance" alt="">
+    <h3>Freelancing</h3>
+    <p>Offer services like design, coding, or writing to clients globally.</p>
+</div>
+
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?ecommerce" alt="">
+    <h3>E-commerce Store</h3>
+    <p>Sell products online using platforms like Shopify or Amazon.</p>
+</div>
+
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?fitness" alt="">
+    <h3>Fitness Coaching</h3>
+    <p>Help people stay fit with online or offline training programs.</p>
+</div>
     <div class="card">
         <h3>🛒 Daily Needs</h3>
         <p>Basic services for everyday needs</p>
@@ -184,13 +257,27 @@ function toggleMenu(){
     <div class="card">Consultancy</div>
     <div class="card">Delivery Services</div>
     <div class="card">Gym / Fitness Studio</div>
+<div class="section">
+    <h2>Our Team 👨‍💼</h2>
 
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?man">
+        <h3>Founder</h3>
+        <p>Leading business growth and strategy.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?team">
+        <h3>Marketing Expert</h3>
+        <p>Helping brands grow online.</p>
+    </div>
 </div>
-<div class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 Phone: 9576413900</p>
-    <p>📍 Location: Srirampur, Lalganj Road, Hajipur, Vaishali</p>
-    <p>📧 Email: sharma0x0x0xh@gmail.com</p>
+<div class="hero">
+    <h2>Build. Grow. Dominate 🚀</h2>
+    <p>We help businesses scale with modern digital strategies and smart solutions.</p>
+    
+    <button onclick="window.location.href='tel:9576413900'">📞 Call Now</button>
+    <button onclick="window.location.href='mailto:sharma0x0x0x@gmail.com'">📧 Email Us</button>
 </div>
 
 <div class="footer">
